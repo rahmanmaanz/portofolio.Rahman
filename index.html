@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahman | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">Portofolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keterampilan</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#documentation">Dokumentasi</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container hero" id="about">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span> Open To Work
+                </div>
+                <h1>Hi, Saya Rahman</h1>
+                <p>
+                  <p align="justify">
+                    Saya Rahman, lulusan S1 Pendidikan Komputer dari Universitas Mulawarman. Latar belakang pengalaman sebagai Guru Informatika dan Mengelola Lab komputer di SMA Negeri 5 Samarinda, saya memiliki keahlian dalam pengelolaan sistem jaringan/IT support, pengajaran berbasis teknologi, hingga pengelolaan media kreatif. 
+                    Saya berorientasi pada hasil, adaptif, serta mampu bekerja secara mandiri maupun berkolaborasi dalam tim untuk memberikan solusi IT yang efektif.
+                </p>
+                <div class="hero-btns">
+                    <a href="#documentation" class="btn btn-primary">Lihat Dokumentasi</a>
+                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+            
+            <!-- Foto Profil -->
+            <div class="hero-avatar-wrapper">
+                <div class="avatar-border-glow"></div>
+                <img src="_DSC8539 (2) (1).jpg" alt="Foto Profil Rahman" class="avatar-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">01. Keterampilan</div>
+                <h2 class="section-title">Keterampilan Utama</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3><span>💻</span> IT & Network Operations</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Information Technology</span>
+                        <span class="skill-tag">Network Infrastructure</span>
+                        <span class="skill-tag">Technical Support</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3><span>📸</span> Creative & Content</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Photo & Video Editing</span>
+                        <span class="skill-tag">Copywriting & Editing</span>
+                        <span class="skill-tag">Media Management</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3><span>✨</span> Education & Professional Skills</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Teaching & Instruction</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Teamwork & Collaboration</span>
+                        <span class="skill-tag">Microsoft Office</span>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">02. Rekam Jejak</div>
+                <h2 class="section-title">Pengalaman Kerja</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Juni 2025 - November 2025</div>
+                    <div class="timeline-title">SMA Negeri 5 Samarinda</div>
+                    <div class="timeline-subtitle">Guru Informatika</div>
+                    <div class="timeline-body">
+                        <ul>
+                            <li>Mengajar mata pelajaran Informatika dengan 9 Kelas.</li>
+                            <li>Turut berperan sebagai panitia dalam kegiatan pelatihan Pembelajaran Deep Learning bagi Guru. </li>
+                            <li>Mengelola lab komputer seperti instalasi, konfigurasi, pemeliharaan troubleshooting, perangkat keras, perangkat lunak serta jaringan komputer.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">November 2024 - Mei 2025</div>
+                    <div class="timeline-title">GoTo Gojek Tokopedia Tbk</div>
+                    <div class="timeline-subtitle">Driver Online</div>
+                    <div class="timeline-body">
+                        <ul>
+                            <li>Mitra pengemudi Gojek dengan tanggung jawab memberikan pelayanan transportasi dan pengantaran yang cepat, aman, serta ramah kepada pelanggan.</li>
+                            <li>Mengatur waktu secara efektif, memahami rute perjalanan, dan menjaga kepuasan pelanggan melalui pelayanan yang baik dan profesional.</li>
+                        </ul>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">03. Portofolio</div>
+                <h2 class="section-title">Dokumentasi Proyek & Kegiatan</h2>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="doc-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="Kegiatan">Kegiatan Sekolah</button>
+                <button class="filter-btn" data-filter="Lab Komputer">Lab Komputer</button>
+                <button class="filter-btn" data-filter="Gojek">Driver</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="doc-grid">
+                <div class="doc-card" data-category="Kegiatan">
+                    <div class="doc-img-wrapper">
+                        <img src="Hijau Putih Oranye Modern Spanduk Acara Seminar.png"alt="Banner">
+                        <span class="doc-badge">Banner</span>
+                    </div>
+                    <div class="doc-info">
+                        <h3>Banner SMAN 5 Samarinda</h3>
+                        <p>Membuat Banner untuk keperluan kegiatan disekolah.</p>
+                    </div>
+                </div>
+
+                <div class="doc-card" data-category="Lab Komputer">
+                    <div class="doc-img-wrapper">
+                        <img src="Screenshot 2025-08-26 122745.png" alt="Pemantauan">
+                        <span class="doc-badge">Pemantauan</span>
+                    </div>
+                    <div class="doc-info">
+                        <h3>Aplikasi Veyon Master</h3>
+                        <p>Instalasi Aplikasi Pemantauan Veyon Master pada lab komputer SMAN 5 Samarinda.</p>
+                    </div>
+                </div>
+
+                <div class="doc-card" data-category="Gojek">
+                    <div class="doc-img-wrapper">
+                        <img src="WhatsApp Image 2026-08-24 at 23.20.07.jpeg" alt="Gojek">
+                        <span class="doc-badge">Ngojol</span>
+                    </div>
+                    <div class="doc-info">
+                        <h3>GoTo Gojek Tokopedia Tbk</h3>
+                        <p>Sebagai mitra pengemudi Gojek dengan tanggung jawab memberikan pelayanan transportasi dan pengantaran yang cepat, aman, serta ramah kepada pelanggan.</p>
+                    </div>
+                </div>
+
+                <div class="doc-card" data-category="Kegiatan">
+                    <div class="doc-img-wrapper">
+                        <img src="WhatsApp Image 2026-08-24 at 23.27.27.jpeg" alt="Kegiatan Sekolah">
+                        <span class="doc-badge">Mengajar</span>
+                    </div>
+                    <div class="doc-info">
+                        <h3>Mengajar Informatika </h3>
+                        <p>Mengajar mata pelajaran Informatika untuk siswa kelas X dan XII dengan total 9 kelas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="section-subtitle">04. Contact</div>
+                <h2 class="section-title">Mari Bekerja Sama</h2>
+                <p class="contact-desc">
+                    
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:rohman.pratama02@gmail.com" class="contact-btn">📧 Email Saya</a>
+                    <a href="https://www.linkedin.com/in/rahman0503/" target="_blank" class="contact-btn">🔗 LinkedIn</a>
+                    <a href="https://wa.me/6285246196100?text=Halo%20Rahman,%20saya%20tertarik%20untuk%20berdiskusi" target="_blank" class="contact-btn">💬 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rahman.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
