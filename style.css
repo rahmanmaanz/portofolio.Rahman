@@ -499,37 +499,58 @@ footer {
     border-top: 1px solid rgba(56, 189, 248, 0.1);
 }
 
-/* Responsive */
-@media (max-width: 868px) {
+/* ===================================================
+   BATASAN KHUSUS LAYAR SMARTPHONE (Max-Width 576px)
+   =================================================== */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 16px;
+    }
+
     .hero-content {
         flex-direction: column-reverse;
         text-align: center;
     }
+
     .hero-text {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .hero h1 { font-size: 2.5rem; }
-    .hero h2 { font-size: 1.3rem; }
-    .nav-links { display: none; }
-    .hero-avatar-wrapper {
-        width: 200px;
-        height: 200px;
-        /* Atur foto profil agar otomatis menyesuaikan layar */
-.profile-img, img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 
-/* Khusus untuk tampilan layar HP */
-@media (max-width: 768px) {
-  .profile-img, img {
-    width: 150px; /* Sesuaikan ukuran lingkaran/foto di HP */
-    height: 150px;
-    border-radius: 50%;
-  }
-}
+    .hero h1 { 
+        font-size: 2.2rem; 
+    }
+
+    .hero h2 { 
+        font-size: 1.3rem; 
+    }
+
+    .nav-links { 
+        display: none; 
+    }
+
+    /* Ukuran khusus foto profil di HP */
+    .hero-avatar-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+
+    .avatar-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    /* Penataan tombol agar pas di HP */
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
     }
 }
