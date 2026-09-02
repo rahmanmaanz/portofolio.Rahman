@@ -614,3 +614,30 @@ footer {
         text-align: center;
     }
 }
+
+        @media (max-width: 576px) {
+    /* Menampilkan kembali menu navigasi di HP */
+    .nav-links {
+        display: flex !important;
+        gap: 12px;
+        overflow-x: auto; /* Memungkinkan menu di-scroll menyamping jika terlalu panjang */
+        white-space: nowrap;
+        padding: 8px 0;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem; /* Mengecilkan ukuran teks menu agar pas di HP */
+    }
+
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    /* Menyesuaikan jarak paling atas agar foto tidak tertutup navbar */
+    .hero {
+        padding-top: 120px !important;
+    }
+    }
+}
