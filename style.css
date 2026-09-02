@@ -615,29 +615,38 @@ footer {
     }
 }
 
-        @media (max-width: 576px) {
-    /* Menampilkan kembali menu navigasi di HP */
+       @media (max-width: 576px) {
+    /* Merapikan susunan navbar di HP */
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    /* Memunculkan menu teks di sebelah kanan logo */
     .nav-links {
         display: flex !important;
         gap: 12px;
-        overflow-x: auto; /* Memungkinkan menu di-scroll menyamping jika terlalu panjang */
+        overflow-x: auto; /* Tautan menu bisa di-scroll menyamping */
         white-space: nowrap;
-        padding: 8px 0;
+        max-width: 65%; /* Mengatur lebar area menu agar tidak menabrak logo */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Sembunyikan scrollbar agar tampilan rapi */
+    .nav-links::-webkit-scrollbar {
+        display: none;
     }
 
     .nav-links a {
-        font-size: 0.8rem; /* Mengecilkan ukuran teks menu agar pas di HP */
+        font-size: 0.8rem;
+        padding: 4px 0;
     }
 
-    .nav-container {
-        flex-direction: column;
-        height: auto;
-        padding: 10px 0;
-    }
-
-    /* Menyesuaikan jarak paling atas agar foto tidak tertutup navbar */
+    /* Menjaga foto profil tetap turun di bawah navbar */
     .hero {
-        padding-top: 120px !important;
-    }
+        padding-top: 100px !important;
     }
 }
